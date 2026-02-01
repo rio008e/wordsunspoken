@@ -4,6 +4,7 @@ import SlideSection from "@/components/SlideSection";
 import FadeText from "@/components/FadeText";
 import ResponseButtons from "@/components/ResponseButtons";
 import ResponseScreens from "@/components/ResponseScreens";
+import BackgroundMusic from "@/components/BackgroundMusic";
 
 // Import images
 import romanticWalk from "@/assets/romantic-walk.jpeg";
@@ -22,21 +23,25 @@ const Index = () => {
 
   if (showResponse && response) {
     return (
-      <AnimatePresence mode="wait">
-        <motion.div
-          key="response"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <ResponseScreens response={response} />
-        </motion.div>
-      </AnimatePresence>
+      <>
+        <BackgroundMusic />
+        <AnimatePresence mode="wait">
+          <motion.div
+            key="response"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+          >
+            <ResponseScreens response={response} />
+          </motion.div>
+        </AnimatePresence>
+      </>
     );
   }
 
   return (
     <div className="relative">
+      <BackgroundMusic />
       {/* Section 1: Opening */}
       <SlideSection backgroundImage={mistySilhouette} overlay="dark">
         <div className="text-center min-h-[60vh] flex flex-col justify-center">

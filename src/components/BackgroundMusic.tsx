@@ -52,9 +52,8 @@ const BackgroundMusic = ({ src }: BackgroundMusicProps) => {
     }
   };
 
-  // Default audio source - using a romantic piano piece placeholder
-  // Replace with actual Maula Mere Maula BGM file
-  const audioSource = src || "/maula-mere-maula.mp3";
+  // Zara Zara piano instrumental BGM
+  const audioSource = src || "/zara-zara-bgm.mp3";
 
   return (
     <>
@@ -89,7 +88,7 @@ const BackgroundMusic = ({ src }: BackgroundMusicProps) => {
               
               <p className="font-body text-lg text-muted-foreground mb-8">
                 This experience is best enjoyed with music. 
-                Would you like to play "Maula Mere Maula" as you read?
+                Would you like to play "Zara Zara" as you read?
               </p>
               
               <div className="flex flex-col gap-4 items-center">

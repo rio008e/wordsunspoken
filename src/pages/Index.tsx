@@ -209,7 +209,7 @@ const Index = () => {
           
           <FadeText delay={0.9}>
             <p className="font-display text-3xl md:text-4xl text-cream mb-16">
-              Neha, would you go out with me?
+              Neha, will you be my girlfriend?
             </p>
           </FadeText>
           
